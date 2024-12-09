@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            height: fit-content; 
+            margin-top: 100px; 
+        }
+        
+        .container {
+            width: 300px;
+            height: fit-content;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+
+        .container #wordSugg {
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        .input-field {
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        .input-field label {
+            padding: 10px;
+        }
+
+        .input-field input[type = text] {
+            border-radius: 5px;
+            padding: 10px;
+            outline: none;
+        }
+
+         #submit {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 60px;
+            border: none;
+            font-size: 1.5em;
+            cursor: pointer;
+            background-color: green;
+            color: white;
+            transition: all .7s;     
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="input-field">
+        <label for="firstname">First name</label>
+        <input type="text" id="firstname" name="firstname">
+
+        <label for="lastname">Last name</label>
+        <input type="text" id="lastname" name="lastname">
+
+        <button id="submit">Submit</button>
+    </div>
+
+    <div class="container">
+        <ul id="wordSugg"></ul>
+    </div>
+    <script src="/SETS STUDY/audio.js"></script>
+</body>
+</html>
